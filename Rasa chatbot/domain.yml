@@ -13,6 +13,9 @@ intents:
 - user_does_not_want_to_order
 - user_chose_restaurant
 - user_chose_food_items
+- contact_us
+- outofscope
+
 responses:
   utter_greet:
   - buttons:
@@ -41,7 +44,9 @@ responses:
   - text: Absolutely okay no issues buddy! Call me whenever you would like to order
   - text: Well, it's your wish! But do let me know if you would like to order sometime
   utter_iamabot:
-  - text: I am a bot, powered by the MAD.
+  - text: I am a bot, powered by BELIEVIX.
+  utter_outofscope:
+  - text: "Sorry, I wasn't able to understand. Could you please rephrase it?"
 actions:
 - utter_greet
 - utter_cheer_up
@@ -53,3 +58,26 @@ actions:
 - utter_display_restaurant
 - order_received_from_user
 - utter_thanking_message
+- validate_contact_us_form
+- action_submit_contact_us_form
+
+forms:
+  contact_us_form:
+    required_slots:
+      name:
+      - type: from_text
+      email:
+      - type: from_entity
+        entity: email
+      phone_number:
+      - type: from_entity
+        entity: number
+      message:
+      - type: from_text
+      confirm_details:
+      - intent: affirm
+        value: yes
+        type: from_intent
+      - intent: deny
+        value: no
+        type: from_intent
