@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Review and Feedback Page</title>
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Leave Your Review and Feedback</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="rating">Rating:</label>
+          <select id="rating" name="rating" required>
+            <option value="" disabled selected>Select rating</option>
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
