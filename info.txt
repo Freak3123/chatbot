@@ -1,0 +1,11 @@
+USER LOGIN: simple user login 
+
+PLACEMENTS OF DEMANDS:
+any person can use the chatbot for any kind of query or demand and the chatbot will use nlp to understand and give response to the user.
+for instance this bot is trained for hotel related chats / queries
+
+CHAT WITH FIRM REPRESENTATIVE:
+the user can contact the firm representative through the chatbot (there's a feature for it where the user can contact the rep through email or ph)
+
+FEEDBACK AND RATINGS:
+a simple html and css file for it
